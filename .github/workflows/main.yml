@@ -20,8 +20,7 @@ jobs:
         # Replace with your deployment commands
         echo "Deploying to self-hosted server..."
         # Example commands (customize for your server):
-        sudo apt update -y
-        sudo apt install apache2* -y
+        sudo apt install apache2 -y
         sudo systemctl start apache2
         sudo systemctl enable apache2
         sudo mkdir /var/www/html/simple-webpage
