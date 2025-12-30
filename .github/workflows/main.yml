@@ -23,7 +23,7 @@ jobs:
         sudo apt install apache2 -y
         sudo systemctl start apache2
         sudo systemctl enable apache2
-        sudo mkdir /var/www/html/simple-webpage
-        sudo cp -r . /var/www/html/simple-webpage/
-        sudo chown -R www-data:www-data /var/www/html/simple-webpage/
+        #sudo mkdir /var/www/html/simple-webpage
+        sudo cp -r . /var/www/html/
+        sudo chown -R www-data:www-data /var/www/html/
         sudo systemctl restart apache2  # or nginx if you're using that
